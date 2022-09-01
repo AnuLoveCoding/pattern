@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+
+    <style>
+        body {
+         color: blue;
+         font-size: 60px;
+         line-height: 0.5;
+        }
+        .space {
+          color :red;
+          opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <h6> this is pattern</h2>
+    <script>
+        var n =9;
+        for( let i=1;i<=n;i++){
+            for(let j=1;j<=n;j++){
+                if(i==1||j==1||i==n||j==n||i==j||j==n-i+1){
+                    document.write("*")
+                }else{
+                    document.write('<span class=space>*</span>')
+                }
+            }
+            document.write("<br/>")
+        }
+        </script>
+
+    
+</body>
+</html>
